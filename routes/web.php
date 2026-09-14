@@ -19,26 +19,6 @@ Route::get('/', function () {
     return redirect('/login');
 });
 
-// One-click URL to fresh migrate & seed database in production
-Route::get('/seed-production-db', function () {
-    try {
-        \Illuminate\Support\Facades\Artisan::call('migrate:fresh', ['--force' => true]);
-        \Illuminate\Support\Facades\Artisan::call('db:seed', ['--force' => true]);
-        
-        return response()->json([
-            'status' => 'success',
-            'message' => 'Database successfully wiped and seeded with Aman, Chandler, Joey, Ross, Monica, Phoebe + 456 attendance rows!',
-            'users' => \App\Models\User::all(['id', 'name', 'email']),
-            'attendance_count' => \App\Models\Attendance::count()
-        ]);
-    } catch (\Throwable $e) {
-        return response()->json([
-            'status' => 'error',
-            'message' => $e->getMessage()
-        ], 500);
-    }
-});
-
 // Authentication Routes
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
