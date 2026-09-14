@@ -1,0 +1,75 @@
+Laravel Interview Task: Employee Attendance Management System
+Objective
+
+Develop an Employee Attendance Management System using Laravel. The system should allow administrators to manage employees and track their daily attendance records.
+
+Estimated Time: 4–8 hours
+Technology: Laravel, MySQL, Blade/Livewire or Vue/React (optional), Bootstrap/Tailwind.
+
+1. Authentication
+
+Implement authentication with the following roles:
+Admin
+Login to the system.
+Manage employees.
+View and manage all attendance records.
+Generate attendance reports.
+Employee
+Login to the system.
+Mark attendance.
+View their own attendance history.
+
+
+
+2. Employee Management
+Admin should be able to:
+Add a new employee.
+Edit employee details.
+Delete/deactivate an employee.
+View a list of all employees.
+
+
+
+3. Attendance Management
+
+The system should support daily attendance tracking.
+Attendance Status
+Present
+Absent
+Half Day
+Leave
+Holiday
+
+4. Attendance Rules / Business Logic
+
+Implement the following rules:
+An employee cannot have duplicate attendance for the same date.
+Login time cannot be later than logout time.
+An employee can mark login only once per day.
+Logout cannot be marked without login.
+If an employee works less than 4 hours, mark as Half Day.
+If an employee works 8 or more hours, mark as Present.
+Admin can manually update attendance records.
+Attendance should automatically calculate total working hours.
+
+
+5. Dashboard
+
+Create a simple dashboard displaying:
+Total Employees
+Present Today
+Absent Today
+Half Day Today
+Employees on Leave
+
+
+
+6. Attendance Reports
+
+Admin should be able to:
+Daily Report
+Select a date.
+View attendance of all employees.
+Monthly Report
+Select month and year.
+View employee-wise attendance summary.
