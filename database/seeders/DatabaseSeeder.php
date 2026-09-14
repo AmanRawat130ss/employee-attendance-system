@@ -35,17 +35,25 @@ class DatabaseSeeder extends Seeder
         // 2. Create Sample Employees
         $employeesData = [
             [
-                'name' => 'Rahul Sharma',
-                'email' => 'rahul@ems.com',
+                'name' => 'Aman',
+                'email' => 'aman@ems.com',
                 'employee_id' => 'EMP001',
                 'phone' => '9811122233',
                 'department' => 'Engineering',
                 'designation' => 'Full Stack Developer',
             ],
             [
+                'name' => 'Rahul Sharma',
+                'email' => 'rahul@ems.com',
+                'employee_id' => 'EMP002',
+                'phone' => '9811122234',
+                'department' => 'Engineering',
+                'designation' => 'Backend Developer',
+            ],
+            [
                 'name' => 'Priya Patel',
                 'email' => 'priya@ems.com',
-                'employee_id' => 'EMP002',
+                'employee_id' => 'EMP003',
                 'phone' => '9822233344',
                 'department' => 'Design',
                 'designation' => 'UI/UX Designer',
@@ -53,7 +61,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Vikram Singh',
                 'email' => 'vikram@ems.com',
-                'employee_id' => 'EMP003',
+                'employee_id' => 'EMP004',
                 'phone' => '9833344455',
                 'department' => 'Marketing',
                 'designation' => 'SEO Specialist',
@@ -61,7 +69,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Sneha Roy',
                 'email' => 'sneha@ems.com',
-                'employee_id' => 'EMP004',
+                'employee_id' => 'EMP005',
                 'phone' => '9844455566',
                 'department' => 'HR',
                 'designation' => 'HR Executive',
@@ -69,7 +77,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Amit Verma',
                 'email' => 'amit@ems.com',
-                'employee_id' => 'EMP005',
+                'employee_id' => 'EMP006',
                 'phone' => '9855566677',
                 'department' => 'Engineering',
                 'designation' => 'QA Engineer',
