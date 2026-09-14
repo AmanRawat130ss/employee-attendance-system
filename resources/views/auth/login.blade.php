@@ -87,7 +87,7 @@
     @endif
 
     <!-- Login Form -->
-    <form action="{{ route('login.submit') }}" method="POST" id="loginForm">
+    <form action="/login" method="POST" id="loginForm">
         @csrf
 
         <div class="field-group">

@@ -665,7 +665,7 @@
                     <div class="user-role">{{ Auth::user()->designation ?? 'Employee' }}</div>
                 </div>
             </div>
-            <form action="{{ route('logout') }}" method="POST">
+            <form action="/logout" method="POST">
                 @csrf
                 <button type="submit" class="btn-logout">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
