@@ -91,4 +91,6 @@ Route::middleware(['auth', 'role:employee'])->group(function () {
     // 4. Export Own Attendance CSV
     Route::get('/employee/attendance/export', [EmployeeAttendanceController::class, 'export'])->name('employee.attendance.export');
 
+     Route::get('/test', [AuthController::class, 'test'])->name('test');
+
 });
